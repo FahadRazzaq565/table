@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body{
+            background-color: rgb(253, 221, 179);
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color:rgb(10, 10, 19);font-size: 100px;margin-top: 10px;">TABLE</h1>
+    <p style="margin-left: 620px; padding-bottom: 0px;">Please enter a number</p>
+    <input min="2" type="number" name="" id="tab" style="margin-left: 600px; background-color: beige;">
+    <p style="margin-left: 590px;">How Much Times Table Should be</p>
+    <input min="2" type="number" name="" id="tab1" style="margin-left: 600px; background-color: beige;"><br>
+<button onclick="tab()" style="border-radius:1px; background-color: black; color: aliceblue;padding: 5px;margin-left: 660px; margin-top: 10px;">Submit</button>
+<p id="tab2" style="margin-left:660px; font-size: large;font-weight: bolder;"></p>
+<script>
+function tab(){
+let tab =Number(document.querySelector('#tab').value);
+let tab1 = Number(document.querySelector('#tab1').value);
+let tab2 = "";
+for(i = 0; i < tab1; i++){
+    tab2 = (`${tab2} <p>  ${tab} x ${i+1} = ${tab * (i+1)}</p>`)
+}
+document.querySelector('#tab2').innerHTML=tab2;
+}
+
+</script>
+
+
+</body>
+</html>
+</body>
+</html>
